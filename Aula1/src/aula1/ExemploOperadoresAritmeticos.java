@@ -1,5 +1,9 @@
 package aula1;
 
+/**
+ * Exemplo de utilizacao dos operadores aritmeticos.
+ * 
+ */
 public class ExemploOperadoresAritmeticos {
 
 	public static void main(String[] args) {

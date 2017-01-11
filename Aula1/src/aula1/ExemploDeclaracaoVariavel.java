@@ -1,5 +1,8 @@
 package aula1;
 
+/**
+ * Exemplo de declaracao de algumas variaveis.
+ */
 public class ExemploDeclaracaoVariavel {
 
 	public static void main(String[] args) {
