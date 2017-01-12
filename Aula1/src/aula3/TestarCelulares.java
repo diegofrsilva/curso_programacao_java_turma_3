@@ -1,6 +1,5 @@
 package aula3;
 
-import aula1.Calculadora;
 
 public class TestarCelulares {
 
@@ -13,20 +12,24 @@ public class TestarCelulares {
 		Bateria bateriaSamsung = new Bateria();
 
 		Celular celular = 
-				new Celular("6", "Nokia", "1", bateria, tela);
+				new Celular(
+						"6", 
+						"Nokia", 
+						"1", 
+						bateria, 
+						tela);
 
 		Celular celularSamsung = 
-				new Celular("S7", 
-							"Samsung", 
-							"2",
-							bateriaSamsung, telaSamsung);
+				new Celular(
+						"S7", 
+						"Samsung", 
+						"2",
+						bateriaSamsung, 
+						telaSamsung);
 
 		celular.carregar();
 		celular.ligar();
 		
-		
-		Celular celularQualquer = new Celular("qualquer");
-		celularQualquer.marca = "Marca qualquer";
-		celularQualquer.numeroSerie = "Numero qualquer";
+		celularSamsung.ligar();
 	}
 }
