@@ -13,11 +13,9 @@ public class VerificaVencedorFutebol {
 		System.out.println("Segundo time: ");
 		String segundoTime = scanner.nextLine();
 
+		System.out.println("Quantidade de jogos: ");
 		int quantidadeJogos = scanner.nextInt();
-		int vitoriasPrimeiroTime = 0, 
-			vitoriasSegundoTime = 0, 
-			saldoGolsPrimeiroTime = 0, 
-			saldoGolsSegundoTime = 0;
+		int vitoriasPrimeiroTime = 0, vitoriasSegundoTime = 0, saldoGolsPrimeiroTime = 0, saldoGolsSegundoTime = 0;
 
 		for (int i = 0; i < quantidadeJogos; i++) {
 			System.out.println("Gols primeiro time: ");
@@ -27,11 +25,25 @@ public class VerificaVencedorFutebol {
 			int golsSegundoTime = scanner.nextInt();
 
 			if (golsPrimeiroTime > golsSegundoTime) {
-				// incrementar numero de vitorias do primerio
+				vitoriasPrimeiroTime++;
 			} else if (golsSegundoTime > golsPrimeiroTime) {
-				// incrementar numero de vitorias do segundo
+				vitoriasSegundoTime++;
 			}
-			// Acumular saldo de gols dos times
+			saldoGolsPrimeiroTime += (golsPrimeiroTime - golsSegundoTime);
+			saldoGolsSegundoTime += (golsSegundoTime - golsPrimeiroTime);
 		}
+
+		if (vitoriasPrimeiroTime > vitoriasSegundoTime) {
+			System.out.println("Vencedor: " + primeiroTime);
+			System.out.println("Vitorias: " + vitoriasPrimeiroTime);
+			System.out.println("Saldo de gols: " + saldoGolsPrimeiroTime);
+		} else if (vitoriasSegundoTime > vitoriasPrimeiroTime) {
+			System.out.println("Vencedor: " + segundoTime);
+			System.out.println("Vitorias: " + vitoriasSegundoTime);
+			System.out.println("Saldo de gols: " + saldoGolsSegundoTime);
+		} else {
+			System.out.println("Empate!");
+		}
+		scanner.close();
 	}
 }
