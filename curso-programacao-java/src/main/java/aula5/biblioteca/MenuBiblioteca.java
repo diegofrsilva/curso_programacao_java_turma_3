@@ -2,7 +2,7 @@ package aula5.biblioteca;
 
 import java.util.Scanner;
 
-public class InterfaceBiblioteca {
+public class MenuBiblioteca {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);

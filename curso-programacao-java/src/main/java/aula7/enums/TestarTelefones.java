@@ -4,8 +4,7 @@ public class TestarTelefones {
 
 	public static void main(String[] args) {
 
-		TipoTelefone residencial = TipoTelefone
-				.valueOf("RESIDENCIAL");
+		TipoTelefone residencial = TipoTelefone.valueOf("RESIDENCIAL");
 
 		TipoTelefone[] values = TipoTelefone.values();
 		TipoTelefone tipoTelefone = values[0];
@@ -15,5 +14,8 @@ public class TestarTelefones {
 
 		System.out.println(telefone1);
 		System.out.println(telefone2);
+
+		System.out.println(residencial);
+		System.out.println(tipoTelefone);
 	}
 }
