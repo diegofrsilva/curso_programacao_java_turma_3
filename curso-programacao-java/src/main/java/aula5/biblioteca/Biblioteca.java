@@ -1,12 +1,11 @@
 package aula5.biblioteca;
 
 public class Biblioteca {
+
 	private Livro[] livros;
-	private final int maxLivros;
 	private int quantidadeLivros;
 
 	public Biblioteca(int maxLivros) {
-		this.maxLivros = maxLivros;
 		this.livros = new Livro[maxLivros];
 		this.quantidadeLivros = 0;
 	}
@@ -63,14 +62,5 @@ public class Biblioteca {
 
 	public final Livro[] getLivros() {
 		return livros;
-	}
-
-	class ClasseInterna {
-		double x;
-		double y;
-		double z;
-	}
-
-	class ClasseInterna2 {
 	}
 }

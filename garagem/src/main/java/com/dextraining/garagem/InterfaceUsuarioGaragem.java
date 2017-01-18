@@ -16,28 +16,7 @@ public class InterfaceUsuarioGaragem {
 
 	public static void main(String[] args) {
 		// TODO: alterar para criar objeto da sua classe.
-		Garagem garagem = new Garagem() {
-
-			public boolean vender(String placa) {
-				// TODO Auto-generated method stub
-				return false;
-			}
-
-			public Collection<Carro> getCarros() {
-				// TODO Auto-generated method stub
-				return new ArrayList<Carro>();
-			}
-
-			public Carro buscar(String placa) {
-				// TODO Auto-generated method stub
-				return null;
-			}
-
-			public boolean adicionar(Carro carro) {
-				// TODO Auto-generated method stub
-				return false;
-			}
-		};
+		Garagem garagem = null;
 
 		Scanner scanner = new Scanner(System.in);
 		int opcao = mostrarMenu(scanner);
