@@ -1,8 +1,7 @@
 package com.pousar.app;
 
-import com.pousar.view.login.LoginViewController;
-import com.pousar.view.usuario.UsuarioViewController;
-import com.pousar.view.viagem.ViagemViewController;
+import java.io.File;
+
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -13,7 +12,9 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import netscape.javascript.JSObject;
 
-import java.io.File;
+import com.pousar.view.login.LoginViewController;
+import com.pousar.view.usuario.UsuarioViewController;
+import com.pousar.view.viagem.ViagemViewController;
 
 /**
  * Classe responsavel por iniciar a janela da aplicacao
