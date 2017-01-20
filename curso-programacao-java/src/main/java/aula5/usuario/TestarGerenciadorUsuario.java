@@ -1,5 +1,6 @@
 package aula5.usuario;
 
+
 public class TestarGerenciadorUsuario {
 
 	public static void main(String[] args) {

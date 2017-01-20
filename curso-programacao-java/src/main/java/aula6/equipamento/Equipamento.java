@@ -24,7 +24,13 @@ public class Equipamento {
 	public void setFabricante(String fabricante) {
 		this.fabricante = fabricante;
 	}
-
+	
+	/**
+	 * Metodo que calcula o preco final de um equipamento.
+	 * 
+	 * @return Retorna o preco final do equipamento acrescido do imposto caso
+	 *         necessario.
+	 */
 	public double calcularPrecoFinal() {
 		return preco;
 	}
