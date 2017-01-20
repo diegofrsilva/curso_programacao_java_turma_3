@@ -4,6 +4,6 @@ bin
 .classpath
 .settings
 .project
-.idea
+.idea/
 .iml
 *.iml
